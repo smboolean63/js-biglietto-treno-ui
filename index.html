@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trenitalia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+            <div class="ticket-form">
+                <div class="ticket-form-fields">
+                    <div class="ticket-form-field">
+                        <label for="name">Nome Cognome</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="ticket-form-field">
+                        <label for="km">Km da percorre</label>
+                        <input id="km" type="number">
+                    </div>
+                    <div class="ticket-form-field">
+                        <label for="age">Fascia d'età</label>
+                        <select id="age">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ticket-form-buttons">
+                    <button id="btn-generate">Genera</button>
+                    <button id="btn-reset">Annulla</button>
+                </div>
+            </div>
+
+            <div id="ticket" class="ticket">
+                <h2>Il tuo biglietto</h2>
+                <div class="ticket-body">
+                    <h3>DETTAGLI PASSEGGERO</h3>
+                    <div class="ticket-body-table">
+                        <div class="ticket-body-table-item">
+                            <h3>NOME DEL PASSEGGERO</h3>
+                            <h4 id="ticket-name"></h4>
+                        </div>
+                        <div class="ticket-body-table-item">
+                            <h3>Offerta</h3>
+                            <div id="ticket-type"></div>
+                        </div>
+                        <div class="ticket-body-table-item">
+                            <h3>Carrozza</h3>
+                            <div id="ticket-wagon">5</div>
+                        </div>
+                        <div class="ticket-body-table-item">
+                            <h3>Codice CP</h3>
+                            <div id="ticket-cp">921092</div>
+                        </div>
+                        <div class="ticket-body-table-item">
+                            <h3>Costo biglietto</h3>
+                            <div id="ticket-price"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
